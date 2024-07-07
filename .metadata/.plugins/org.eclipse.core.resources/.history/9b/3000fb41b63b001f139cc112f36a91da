@@ -1,0 +1,40 @@
+In Java 'Map' collection interface is implemented by several classes
+	
+	
+	1)HashTable
+	
+	2)ConcurrentHashMap
+	
+	3)HashTree
+	
+	4)HashMap
+
+	5)LinkedHashMap
+	
+	6)WeakHashMap
+
+	7)EnumHashMap
+
+	8)IdentityHashMap
+	 
+
+  1)HashTable
+--------------
+
+- It is Legacy class
+
+- It is synchronized and thread-safe
+
+- Working in Multi-threaded Environment 
+
+- It might slower in multi-threaded Environment compared to 'ConcurrentHashMap'
+
+
+2) ConcurrentHashMap
+--------------------
+
+- It is introduced in java 5 
+
+-It is designed for concurrent use and provides better scalability than 'Hashtable'
+
+-

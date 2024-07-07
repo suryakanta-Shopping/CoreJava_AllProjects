@@ -1,0 +1,5 @@
+1) Vector allow duplicate to store the element
+
+2) Doesn't meantain any order
+
+3) 

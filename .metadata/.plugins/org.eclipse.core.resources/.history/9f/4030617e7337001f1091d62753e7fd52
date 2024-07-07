@@ -1,0 +1,65 @@
+package com.col.treeSet;
+
+import java.util.Iterator;
+import java.util.Set;
+import java.util.TreeSet;
+
+class Employee {
+	private String name;
+
+	private Integer age;
+
+	@Override
+	public String toString() {
+		return "Employee [name=" + name + ", age=" + age + "]";
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Integer getAge() {
+		return age;
+	}
+
+	public void setAge(Integer age) {
+		this.age = age;
+	}
+
+	public Employee(String name, Integer age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+
+}
+
+public class TreeSet_Adding_Elements_03 {
+
+	public static void main(String[] args) {
+
+//		Set<String,Integer> t = new TreeSet<String,Integer>(); this process is not possible
+
+		// so we need to create Custome Object in TreeSet
+
+		t.add("Lipu");
+		t.add("Kaka");
+		t.add("sapu");
+		t.add("Nanu");
+		t.add("Sipun");
+		t.add("Somu");
+		t.add("Litu");
+
+		// System.out.println(t);
+
+		for (String s1 : t) {
+			System.out.println(s1);
+		}
+
+	}
+
+}

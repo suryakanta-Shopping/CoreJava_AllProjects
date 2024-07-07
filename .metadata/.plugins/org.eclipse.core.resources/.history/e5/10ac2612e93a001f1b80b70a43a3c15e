@@ -1,0 +1,10 @@
+package by.using.map.interfaceinStream;
+
+public class Mapping_To_FlattenList_04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

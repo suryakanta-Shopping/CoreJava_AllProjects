@@ -1,0 +1,20 @@
+package javagauides.surya.test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class LambdaExp_UsingComparator {
+
+	public static void main(String[] args) {
+		
+		List<Person> listOfPerson=new ArrayList<Person>();
+
+		listOfPerson.add(new Person("salu",34));
+		listOfPerson.add(new Person("Mukesh", 14));
+		listOfPerson.add(new Person("keshi", 17));
+		listOfPerson.add(new Person("Suresh", 29));
+		listOfPerson.add(new Person("Kohali", 30));
+		listOfPerson.add(new Person("Keshab", 25));
+	}
+
+}

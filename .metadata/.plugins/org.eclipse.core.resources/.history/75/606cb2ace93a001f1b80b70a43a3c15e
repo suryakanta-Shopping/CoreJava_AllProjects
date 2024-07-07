@@ -1,0 +1,10 @@
+package by.using.map.interfaceinStream;
+
+public class Find_Duplicate_FromA_GivenString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

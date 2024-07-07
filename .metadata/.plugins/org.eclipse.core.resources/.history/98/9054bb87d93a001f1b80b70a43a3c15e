@@ -1,0 +1,10 @@
+package by.using.map.interfaceinStream;
+
+public class GivenList_Makethem_Squre {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

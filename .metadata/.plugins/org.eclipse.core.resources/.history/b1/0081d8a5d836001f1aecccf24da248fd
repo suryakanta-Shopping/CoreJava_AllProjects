@@ -1,0 +1,16 @@
+package com.surya.s30thJune.LogicalCode.ForInterview;
+
+public class Prime_Number {
+
+	public static void main(String[] args) {
+		/**
+		 * 
+		 * ex 11 , 7 , 13 etc
+		 * 
+		 * divisiable by itself and 1
+		 */
+		
+
+	}
+
+}

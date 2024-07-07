@@ -1,0 +1,41 @@
+package by.using.map.interfaceinStream;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class EmpMain_FindOutSalmorethanThirtand_AddSal {
+
+	
+	
+	/*
+	 * From the given list of employees findout the salary of employee who getting 
+	 * 30k salary and add with there salary by 5k 
+	 */
+	public static void main(String[] args) {
+	
+		
+		List<Employee> EmployeeList = new ArrayList<Employee>();
+		EmployeeList.add(new Employee(121, "Surya", 24,30000.0));
+		EmployeeList.add(new Employee(104, "Sipu", 19,12000.9));
+		EmployeeList.add(new Employee(99, "biki",34,94444.9));
+		EmployeeList.add(new Employee(122, "Lipu", 26,56666.6));
+		EmployeeList.add(new Employee(134, "sibu", 13,24000.6));
+		EmployeeList.add(new Employee(151, "praksh", 34,1000.0));
+		EmployeeList.add(new Employee(174, "omm", 55,2922.0));
+		EmployeeList.add(new Employee(135, "sani",56, 22554.4));
+		EmployeeList.add(new Employee(11, "supi", 21,9889.9));
+		EmployeeList.add(new Employee(171, "lucky", 11,2333.4));
+		EmployeeList.add(new Employee(121, "digina", 27,4994.9));
+		EmployeeList.add(new Employee(17, "dibya", 29,9440.0));
+		EmployeeList.add(new Employee(1781, "para", 57,9449.9));
+		EmployeeList.add(new Employee(135, "anish", 49,994.4));
+		EmployeeList.add(new Employee(1, "lantu", 16,4994.4));
+		EmployeeList.add(new Employee(81, "litu", 19,413.3));
+		EmployeeList.add(new Employee(31, "sonu", 10,3733.3));
+		EmployeeList.add(new Employee(701, "sonu", 92,38883.3));
+		EmployeeList.add(new Employee(801, "fakira", 56, 3848.4));
+
+	}
+
+}

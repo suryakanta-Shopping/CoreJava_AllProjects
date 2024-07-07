@@ -1,0 +1,28 @@
+package com.col.treeSet;
+
+import java.util.Comparator;
+import java.util.TreeSet;
+
+public class TreeSet_Adding_Elements_Retrive_InAsc_04 implements Comparator<TreeSet_Adding_Elements_Retrive_InAsc_04> {
+
+	public static void main(String[] args) {
+		
+		
+		TreeSet<Integer> numbers=new TreeSet<>();
+
+		numbers.add(12);		
+		numbers.add(5);		
+		numbers.add(42);		
+		numbers.add(52);		
+		numbers.add(123);		
+		numbers.add(11);		
+		numbers.add(62);		
+	}
+
+	@Override
+	public int compare(TreeSet_Adding_Elements_Retrive_InAsc_04 o1, TreeSet_Adding_Elements_Retrive_InAsc_04 o2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}

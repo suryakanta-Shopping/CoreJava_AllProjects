@@ -1,0 +1,5 @@
+package javagauides.surya.test;
+
+public class LambdaExp_IterateArrayList_UsingForEachMethod {
+
+}

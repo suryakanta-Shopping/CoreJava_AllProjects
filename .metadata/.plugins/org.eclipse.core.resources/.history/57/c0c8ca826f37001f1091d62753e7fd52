@@ -1,0 +1,21 @@
+package com.col.treeSet;
+
+import java.util.TreeSet;
+
+public class TreeSet_Test01 {
+
+	private TreeSet<User> usrSet;
+	
+	public TreeSet_Test01() {
+		usrSet=new TreeSet<>();
+	}
+	
+	
+
+	public static void main(String[] args) {
+
+		TreeSet<User> userSet;
+
+	}
+
+}

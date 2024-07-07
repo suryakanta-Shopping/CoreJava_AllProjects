@@ -1,0 +1,37 @@
+package com.surya.hastable.example;
+
+import java.util.Hashtable;
+import java.util.Map;
+
+public class HashTable_Byusing_Stream_Test02 {
+
+	public static void main(String[] args) {
+
+		Hashtable<Integer, String> users = new Hashtable<>();
+
+		users.put(1, "Alice - alice@example.com");
+		users.put(2, "Bob - bob@example.com");
+		users.put(3, "Charlie - charlie@example.net");
+		users.put(4, "David - david@example.com");
+
+		// System.out.println(ht);
+
+		for (Map.Entry<Integer, String> mapresult : ht.entrySet()) {
+			System.out.println(mapresult);
+		}
+
+		// remove element from map
+		ht.remove(1);
+
+		System.out.println(ht);
+
+		System.out.println("=====");
+
+		// getting the specific element from Hashmap
+		String string01 = ht.get(4);
+
+		System.out.println(string01);
+
+	}
+
+}

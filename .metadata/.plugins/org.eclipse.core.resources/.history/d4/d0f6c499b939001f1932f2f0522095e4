@@ -1,0 +1,11 @@
+package com.col.vector;
+
+public class Vector_Test01 {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Hi");
+
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;cmo.surya.co&apos; to &apos;cmo.surya.binary.operators&apos;&#x0D;&#x0A;- Original project: &apos;Java_AllLogical_Operators_Projects&apos;&#x0D;&#x0A;- Original element: &apos;Java_AllLogical_Operators_Projects/src/cmo.surya.co&apos;&#x0D;&#x0A;- Renamed element: &apos;Java_AllLogical_Operators_Projects/src/cmo.surya.binary.operators&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;cmo.surya.co&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;cmo.surya.co" name="cmo.surya.binary.operators" qualified="false" references="true" stamp="1699840923733" textual="false" version="1.0"/>
+</session>

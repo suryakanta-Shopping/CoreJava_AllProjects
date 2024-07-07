@@ -1,0 +1,24 @@
+package by.using.map.interfaceinStream;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class EmpMain_FindOutSalmorethanThirtand_AddSal {
+
+	
+	
+	/*
+	 * From the given list of employees findout the salary of employee who getting 
+	 * 30k salary and add with there salary by 5k 
+	 */
+	public static void main(String[] args) {
+	
+		
+		List<Employee> EmployeeList = new ArrayList<Employee>();
+		EmployeeList.add(new Employee(121, "Surya", 24,30000.9);
+		
+
+	}
+
+}

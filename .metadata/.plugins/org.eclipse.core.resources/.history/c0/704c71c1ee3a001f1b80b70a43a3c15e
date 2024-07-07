@@ -1,0 +1,73 @@
+package by.using.map.interfaceinStream;
+
+import java.util.Objects;
+
+public class Employee {
+
+private Integer empId;
+	
+	private String empName;
+
+	private Integer empAge;
+	
+	private Double empSal;
+
+	public Integer getEmpId() {
+		return empId;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(empAge, empId, empName, empSal);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Employee other = (Employee) obj;
+		return Objects.equals(empAge, other.empAge) && Objects.equals(empId, other.empId)
+				&& Objects.equals(empName, other.empName) && Objects.equals(empSal, other.empSal);
+	}
+
+	public void setEmpId(Integer empId) {
+		this.empId = empId;
+	}
+
+	public String getEmpName() {
+		return empName;
+	}
+
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+
+	public Integer getEmpAge() {
+		return empAge;
+	}
+
+	public void setEmpAge(Integer empAge) {
+		this.empAge = empAge;
+	}
+
+	public Double getEmpSal() {
+		return empSal;
+	}
+
+	public void setEmpSal(Double empSal) {
+		this.empSal = empSal;
+	}
+
+	public Employee(Integer empId, String empName, Integer empAge, Double empSal) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+		this.empAge = empAge;
+		this.empSal = empSal;
+	}
+
+}

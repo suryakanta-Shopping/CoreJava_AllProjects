@@ -1,0 +1,12 @@
+In Java 'Map' collection interface is implemented by several classes
+	
+	
+	1)TreeMap
+	2)Hashmap
+	3)HashTable
+	4)LinkedHashMap
+	5)WeakHashMap
+	6)ConcurrentHashMap
+	7)EnumHashMap
+	 
+

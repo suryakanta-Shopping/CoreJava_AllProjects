@@ -1,0 +1,16 @@
+package com.surya.encapsulation;
+
+public class BankAccount {
+
+	private double balance;
+	
+	public void setBalance(double balance) throws IllegalArgumentException{
+		
+		if(balance==0) {
+			System.out.println("Don't pass Zero");
+		}
+		if(balance<0) {
+			System.out.println("Don't pass -ve value");
+		}
+	}
+}

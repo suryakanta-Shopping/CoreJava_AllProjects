@@ -1,0 +1,7 @@
+1)'TreeSet' implements the 'Set' Interface
+
+2)'TreeSet' uses a 'TreeMap' internally to store elements 
+
+3)'TreeSet' are stored in a sorted and Ascending order
+
+4) 

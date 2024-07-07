@@ -1,0 +1,23 @@
+package com.surya.s30thJune.LogicalCode.ForInterview;
+
+public class Arnstrong_Number {
+
+	public static void main(String[] args) {
+		
+		int num =370 ;
+		
+		 int temp;// int number;
+		
+		int total=0;
+		
+		temp = num;
+		
+		while(num !=0) {
+			
+			temp = num % 10;
+			
+		}
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package by.using.map.interfaceinStream;
+
+public class GivenString_FindLength_OfEach_03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

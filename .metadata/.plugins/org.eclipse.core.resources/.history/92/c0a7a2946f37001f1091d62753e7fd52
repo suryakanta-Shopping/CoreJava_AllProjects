@@ -1,0 +1,48 @@
+package com.col.treeSet;
+
+import java.util.TreeSet;
+
+public class TreeSet_Test01 {
+
+	private TreeSet<User> userSet;
+
+	public TreeSet_Test01() {
+		userSet = new TreeSet<>();
+	}
+
+//Step 3: Adding and Removing Uses
+
+	public void addUser(User user) {
+		userSet.add(user);
+	}
+
+	public void removeUser(User user) {
+		userSet.remove(user);
+	}
+//step 4: Retrieving the yoinggest and Oldest Users
+
+	public User getYoungUser() {
+		return userSet.first();
+	}
+
+	public User getOldestUser() {
+		return userSet.last();
+	}
+
+	public static void main(String[] args) {
+
+		TreeSet_Test01 ts=new TreeSet_Test01();
+		
+		ts.addUser(new User("Lipu", 25));
+		ts.addUser(new User("Situ", 25));
+		ts.addUser(new User("Sime", 25));
+		ts.addUser(new User("Raka", 25));
+		ts.addUser(new User("Mukesh", 25));
+		ts.addUser(new User("Omm", 25));
+		ts.addUser(new User("Sapu", 25));
+		ts.addUser(new User("Kaka", 25));
+		ts.addUser(new User("Anil", 25));
+
+	}
+
+}

@@ -1,0 +1,24 @@
+								//Stream.generate() or Stream.iterate()
+//In the given example, we are creating a stream from generated elements.
+//This will produce a stream of 20 random numbers. 
+//We have restricted the elements count using limit() function.
+
+package interview.pratice.test;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class Test5 {
+
+	public static void main(String[] args) {
+
+		List<Integer> list=new ArrayList<>();
+		
+		for(int i=1;i<20;i++) {
+			list.add(i);
+		}
+		
+		list.forEach(p->System.out.println(p));
+	}
+}

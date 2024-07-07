@@ -1,0 +1,9 @@
+package com.col.treeSet;
+
+import java.util.Comparator;
+import java.util.TreeSet;
+
+public class TreeSet_Adding_Elements_Retrive_InAsc_04 implements Comparator<TreeSet_Adding_Elements_Retrive_InAsc_04> {
+
+	TreeSet<Integer> numbers=new TreeSet<>();
+}

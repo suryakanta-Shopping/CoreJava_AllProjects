@@ -1,0 +1,10 @@
+package by.using.map.interfaceinStream;
+
+public class Convert_StringToInteger_05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

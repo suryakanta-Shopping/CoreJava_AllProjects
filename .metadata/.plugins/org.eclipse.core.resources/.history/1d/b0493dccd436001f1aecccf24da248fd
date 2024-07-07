@@ -1,0 +1,47 @@
+package com.surya.s30thJune.LogicalCode.ForInterview;
+
+import java.util.Scanner;
+
+public class Palindrome_Number {
+
+	public static void main(String[] args) {
+
+		Scanner scn = new Scanner(System.in);
+		int number = scn.nextInt();
+		
+		System.out.println("Enter the Number is : "+number);
+		
+		/*
+		 * Find out the number is Palindrome or Not 
+		 * 
+		 * i.e 121 ,242 ,12121 etc
+		 */
+		
+	//	int number = 121;  here u can use scanner class or direct value u can use
+
+		int reminder;
+
+		int sum = 0;
+		
+		int temp;
+
+		temp = number;   // as for while loop condition ,1st take intialilization value
+
+		while (number > 0) {	// 2nd 1-check condtion , condtion is 121>0 'true'  // 2-check condtion 12>0 is true // 3rd constion 1>0 cond is true 
+
+			reminder = number % 10;  // reminder =121 % 10 = 1 ,  reminder= 12 % 10 = 2  , reminder= 1 % 10 =
+
+			sum = sum * 10 + reminder; // 3rd step is 'updation'  // step-1 sum=0*10+1=1 //step-2 sum= 1*10+2=12
+
+			number = number / 10;  //step-1 number = 121 / 10 = 12  //step-2 number = 12 / 10 = 1
+		}
+
+		if (temp == sum) {
+			System.out.println("Number is Palindrome");
+		} else {
+			System.out.println("Number is not palindrome");
+		}
+
+	}
+
+}

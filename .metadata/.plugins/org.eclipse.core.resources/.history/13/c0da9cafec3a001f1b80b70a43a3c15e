@@ -1,0 +1,18 @@
+package by.using.map.interfaceinStream;
+
+public class EmpMain_FindOutSalmorethanThirtand_AddSal {
+
+	
+	
+	/*
+	 * From the given list of employees findout the salary of employee who getting 
+	 * 30k salary and add with there salary by 5k 
+	 */
+	public static void main(String[] args) {
+	
+		
+		
+
+	}
+
+}

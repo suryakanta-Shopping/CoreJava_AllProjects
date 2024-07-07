@@ -1,0 +1,14 @@
+package interfacee.example.surya;
+
+interface FirstInterface {
+
+	public void goodMong(); //abastact function method
+	
+	public void goodEvng(); //abastact function method
+	
+	public void goodNight(); //abastact function method
+}
+
+public class InterfaceExample01 {
+
+}

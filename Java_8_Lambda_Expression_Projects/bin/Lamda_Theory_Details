@@ -1,0 +1,389 @@
+In Java, Lambda expressions basically express instances of functional interfaces (An interface with a single abstract method is called a functional interface).
+ Lambda Expressions in Java are the same as lambda functions which are 
+ the short block of code that accepts input as parameters and returns a resultant value.
+  Lambda Expressions are recently included in Java SE 8. 
+  
+  
+  Functionalities of Lambda Expression in Java
+Lambda Expressions implement the only abstract function and therefore implement functional interfaces lambda expressions are added in Java 8 and provide the below functionalities.
+
+Enable to treat functionality as a method argument, or code as data.
+A function that can be created without belonging to any class.
+A lambda expression can be passed around as if it was an object and executed on demand.
+
+
+// Java program to demonstrate lambda expressions
+// to implement a user defined functional interface.
+ 
+// A sample functional interface (An interface with
+// single abstract method
+interface FuncInterface
+{
+    // An abstract function
+    void abstractFun(int x);
+ 
+    // A non-abstract (or default) function
+    default void normalFun()
+    {
+       System.out.println("Hello");
+    }
+}
+ 
+class Test
+{
+    public static void main(String args[])
+    {
+        // lambda expression to implement above
+        // functional interface. This interface
+        // by default implements abstractFun()
+        FuncInterface fobj = (int x)->System.out.println(2*x);
+ 
+        // This calls above lambda expression and prints 10.
+        fobj.abstractFun(5);
+    }
+}
+=======================
+Lambda Expression Parameters
+There are three Lambda Expression Parameters are mentioned below:
+
+Zero Parameter
+Single Parameter
+Multiple Parameters
+
+1. Lambda Expression with Zero parameter 
+
+() -> System.out.println("Zero parameter lambda");
+
+2. Lambda Expression with Single parameter
+
+(p) -> System.out.println("One parameter: " + p);
+
+It is not mandatory to use parentheses if the type of that variable can be inferred from the context
+
+Java
+=====
+// A Java program to demonstrate simple lambda expressions
+import java.util.ArrayList;
+class Test {
+    public static void main(String args[])
+    {
+        // Creating an ArrayList with elements
+        // {1, 2, 3, 4}
+        ArrayList<Integer> arrL = new ArrayList<Integer>();
+        arrL.add(1);
+        arrL.add(2);
+        arrL.add(3);
+        arrL.add(4);
+ 
+        // Using lambda expression to print all elements
+        // of arrL
+        arrL.forEach(n -> System.out.println(n));
+ 
+        // Using lambda expression to print even elements
+        // of arrL
+        arrL.forEach(n -> {
+            if (n % 2 == 0)
+                System.out.println(n);
+        });
+    }
+}
+
+Output
+1
+2
+3
+4
+2
+4
+============================
+3. Lambda Expression with Multiple parameters
+(p1, p2) -> System.out.println("Multiple parameters: " + p1 + ", " + p2);
+
+A Java program to demonstrate the working of a lambda expression with two arguments. 
+
+Java
+======
+// Java program to demonstrate working of lambda expressions
+public class Test {
+    // operation is implemented using lambda expressions
+    interface FuncInter1 {
+        int operation(int a, int b);
+    }
+ 
+    // sayMessage() is implemented using lambda expressions
+    // above
+    interface FuncInter2 {
+        void sayMessage(String message);
+    }
+ 
+    // Performs FuncInter1's operation on 'a' and 'b'
+    private int operate(int a, int b, FuncInter1 fobj)
+    {
+        return fobj.operation(a, b);
+    }
+ 
+    public static void main(String args[])
+    {
+        // lambda expression for addition for two parameters
+        // data type for x and y is optional.
+        // This expression implements 'FuncInter1' interface
+        FuncInter1 add = (int x, int y) -> x + y;
+ 
+        // lambda expression multiplication for two
+        // parameters This expression also implements
+        // 'FuncInter1' interface
+        FuncInter1 multiply = (int x, int y) -> x * y;
+ 
+        // Creating an object of Test to call operate using
+        // different implementations using lambda
+        // Expressions
+        Test tobj = new Test();
+ 
+        // Add two numbers using lambda expression
+        System.out.println("Addition is "
+                           + tobj.operate(6, 3, add));
+ 
+        // Multiply two numbers using lambda expression
+        System.out.println("Multiplication is "
+                           + tobj.operate(6, 3, multiply));
+ 
+        // lambda expression for single parameter
+        // This expression implements 'FuncInter2' interface
+        FuncInter2 fobj = message
+            -> System.out.println("Hello " + message);
+        fobj.sayMessage("Geek");
+    }
+}
+Output
+
+Addition is 9
+Multiplication is 18
+Hello Geek
+
+
+=================================================
+Q1. What type of lambda expression Java?
+Answer:
+
+Java Lambda Expressions are the short block of code that accepts input as parameters and returns a resultant value.
+
+Q2. Is it good to use lambda expressions in Java?
+Answer:
+
+Yes, using lambda expressions makes it easier to use and support other APIs.
+
+Q3. What are the drawbacks of Java lambda?
+Answer:
+
+Java lambda functions can be only used with functional interfaces.
+
+Q4. Based on the syntax rules just shown, which of the following is/are NOT valid lambda expressions?
+
+() -> {}
+() -> “geeksforgeeks”
+() -> { return “geeksforgeeks”;)
+(Integer i) -> return “geeksforgeeks” + i;
+(String s) -> {“geeksforgeeks”;}
+
+Answer:
+4 and 5 are invalid lambdas, the rest are valid. Details:
+
+This lambda has no parameters and returns void. It’s similar to a method with an empty body: public void run() { }.
+This lambda has no parameters and returns a String as an expression.
+This lambda has no parameters and returns a String (using an explicit return statement, within a block).
+return is a control-flow statement. To make this lambda valid, curly braces are required as follows: (Integer i) -> { return “geeksforgeeks” + i; }.
+“geeks for geeks” is an expression, not a statement. To make this lambda valid, you can remove the curly braces and semicolon as follows: (String s) -> “geeks for geeks”. Or if you prefer, you can use an explicit return statement as follows: (String s) -> { return “geeks for geeks”; }.
+
+
+
+
+
+================================
+Lambda Expressions are anonymous functions. These functions do not need a name or a class to be used. Lambda expressions are added in Java 8. Lambda expressions basically express instances of functional interfaces An interface with a single abstract method is called a functional interface. One example is java.lang.Runnable.
+
+Lambda expressions implement only one abstract function and therefore implement functional interfaces. Predicate interface is an example of a functional interface that has only one abstract method called test().
+
+Illustration:
+
+interface Predicate
+{
+    ......
+    abstract boolean test(T t)
+}
+The above is a functional interface that has one abstract method test receiving only one parameter of type T and returns a boolean value. This method is a generic method that takes a type parameter. This interface can be implemented anywhere in a program using a lambda expression instead of creating classes with multiple functions. For eg, to implement a runnable interface used only for multithreading one needs to implement only a run() method. Then there is the comparable interface which can be implemented using compare() method.
+
+Important points:
+
+
+
+The body of a lambda expression can contain zero, one, or more statements.
+When there is a single statement curly brackets are not mandatory and the return type of the anonymous function is the same as that of the body expression.
+When there is more than one statement, then these must be enclosed in curly brackets (a code block) and the return type of the anonymous function is the same as the type of the value returned within the code block, or void if nothing is returned.
+These are for single–line lambda expressions having void return type.
+
+Type 1: No Parameter.
+
+Syntax:
+
+() -> System.out.println("Hello");
+It takes interface of the following form:
+
+interface Test1
+{
+    void print()
+}
+Type 2: Single Parameter.
+
+Syntax:
+
+(p) -> System.out.println(p);
+It is not mandatory to use parentheses if the type of that variable can be inferred from the context
+
+It takes interface of the following form:
+
+interface Test2
+{
+    void print(Integer p)
+}
+The type and return type of the lambdas are automatically inferred.
+
+Type 3: Multi parameters
+
+(p1, p2) -> System.out.println(p1 + " " + p2);
+It is not mandatory to use parentheses if the type of that variable can be inferred from the context
+
+It takes interface of the following form:
+
+interface Test3
+{
+    void print(Integer p1, Integer p2)
+}
+The type and return type of the lambdas are automatically inferred.
+
+Now, we are done with discussing out the theoretical concept, now let us come up with the implementation part. So here primarily we will be discussing out the codes for the above three types as discussed above:
+
+Note: forEach() method is of Iterable interface that is used to iterate through a collection. Here it takes an argument of Consumer type interface. This is a functional interface having only one abstract method called accept(). Since it is a functional interface, a lambda expression can be passed.
+
+Hence, if we do conclude out the above 
+
+Example 1: Lambda expression with no parameters
+
+
+// Java code to illustrate lambda expression
+// without parameters
+ 
+// functional interface
+// without parameters
+interface Test1 {
+    void print();
+}
+ 
+class GfG {
+    // functional interface parameter is passed
+    static void fun(Test1 t) { t.print(); }
+    public static void main(String[] args)
+    {
+        // lambda expression is passed
+        // without parameter to functional interface t
+        fun(() -> System.out.println("Hello"));
+    }
+}
+Output
+Hello
+Example 2: Type 2 Lambda expression with a single parameter
+
+
+// Java code to illustrate lambda expression
+// with single parameter
+ 
+// functional interface
+// with one parameter of Integer type
+interface Test2 {
+    // The void type and the Integer type
+    // is automatically inferred from here
+    // and assigned to the lambda expression
+    void print(Integer p);
+}
+ 
+class GfG {
+    // takes lambda expression and a variable of
+    // Integer type as arguments
+    static void fun(Test2 t, Integer p)
+    {
+        // calls the print function
+        t.print(p);
+    }
+    public static void main(String[] args)
+    {
+        // lambda expression is passed
+        // with a single parameter
+        // lambda expression is mapped to the
+        // single argument abstract function in the
+        // functional interface Test2
+        fun(p -> System.out.println(p), 10);
+    }
+}
+Output
+10
+Example 3: Type 3 Lambda expression with multi parameters
+
+
+// Java code to illustrate lambda expression
+// with multi parameters
+ 
+// functional interface Test3
+// with 2 parameter of Integer type
+interface Test3 {
+    // The void type and the Integer type
+    // is automatically inferred from here
+    // and assigned to the lambda expression
+    void print(Integer p1, Integer p2);
+}
+ 
+class GfG {
+    // takes parameter of Test3 type followed
+    // by 2 integer parameters p1 and p2
+    static void fun(Test3 t, Integer p1, Integer p2)
+    {
+        // calls the print function
+        t.print(p1, p2);
+    }
+    public static void main(String[] args)
+    {
+        // lambda expression is passed
+        // with two parameters
+        // lambda expression is mapped to the
+        // double argument abstract function in the
+        // functional interface Test3
+        fun((p1, p2)
+                -> System.out.println(p1 + " " + p2),
+            10, 20);
+    }
+}
+Output
+10 20
+Example 4:Lambda expression with two parameters
+
+
+// Demonstrate a lambda expression that takes two parameters
+ 
+interface NumericTest2{
+   boolean test(int n, int d);
+}
+ 
+class GFG{
+public static void main(String args[]){
+ 
+  // The lambda expression here determines if one number is the factor of another
+  NumericTest2 isFactor= (n,d) -> (n%d)==0;
+  if(isFactor.test(10,2))
+    System.out.println("2 is the factor of 10");
+   
+  if(!isFactor.test(10,3))
+    System.out.println("3 is not a factor of 10");
+   
+}
+}
+Output
+2 is the factor of 10
+3 is not a factor of 10

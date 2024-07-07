@@ -1,0 +1,30 @@
+package com.col.vector;
+
+import java.util.Vector;
+
+public class Vector_Test02 {
+
+	public static void main(String[] args) {
+		
+		Vector<Integer> l1=new Vector<>();
+		
+		l1.add(1);
+		l1.add(1);
+		l1.add(3);
+		l1.add(4);
+		l1.add(6);
+		l1.add(2);
+		l1.add(8);
+		l1.add(9);
+		
+		for( Integer val : l1) {
+			System.out.println(val);
+			
+			val.valueOf(5);
+		}
+		
+		
+
+	}
+
+}
