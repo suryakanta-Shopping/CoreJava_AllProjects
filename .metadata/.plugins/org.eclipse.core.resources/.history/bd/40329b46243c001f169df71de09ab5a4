@@ -1,0 +1,33 @@
+package com.nt.singleton;
+
+public class Singleton_Test01 {
+	
+	/*
+	 * Singleton class have a private static instance of itself
+	 * 
+	 * private constructor , and a public static method to provide access to the instance
+	 */
+	
+	//	Step-1 : Create a private static instance of the class 
+	private static Singleton_Test01 instance;
+	
+	// Step 2: Make the constructor private so that the class cannot be instantiated from outside
+	
+	private Singleton_Test01() {
+		
+		//private constructor to prevent instatiation
+	}
+	
+	//step-3 private a public static method that return the instance of the class
+	
+	
+
+	public static void main(String[] args) {
+	
+		
+	
+		
+
+	}
+
+}

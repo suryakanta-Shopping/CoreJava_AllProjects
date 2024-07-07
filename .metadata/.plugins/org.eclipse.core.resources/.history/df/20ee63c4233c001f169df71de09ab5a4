@@ -1,0 +1,18 @@
+package com.nt.singleton;
+
+public class Singleton_Test01 {
+	
+	/*
+	 * Singleton class have a private static instance of itself
+	 * 
+	 * private constructor , and a public static method to provide access to the instance
+	 */
+
+	public static void main(String[] args) {
+	
+		
+		
+
+	}
+
+}
